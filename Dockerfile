@@ -1,6 +1,7 @@
 FROM phusion/baseimage
 
-EXPOSE 8500 8600/udp 8400 8300 8301 8302
+
+EXPOSE 8300 8301 8301/udp 8302 8302/udp 8400 8500 8600/udp
 
 RUN apt-get update && apt-get install wget zip unzip && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
