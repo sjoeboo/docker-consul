@@ -16,4 +16,4 @@ RUN wget https://dl.bintray.com/mitchellh/consul/0.5.2_linux_amd64.zip -O /tmp/c
  && mkdir /config \ 
  && mkdir /data 
 
-CMD /usr/bin/consul -config-dir /config
+CMD /usr/bin/consul agent -config-dir /config
